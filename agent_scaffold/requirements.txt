@@ -1,0 +1,6 @@
+smolagents[toolkit]
+smolagents[openai]
+smolagents[mcp]
+wcwidth
+fastmcp
+pandas
