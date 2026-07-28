@@ -1,11 +1,12 @@
 此项目为极客时间中AI相关课程的学习笔记
 
-# 课程目录
+## 课程目录
 - agent_scafflod
-Harness Agent 脚手架实战课
+
+[Harness Agent 脚手架实战课](https://time.geekbang.org/column/intro/101170001)
 
 
-# 环境搭建
+## 环境搭建
 
 本项目使用 uv 管理
 

@@ -4,3 +4,8 @@ smolagents[mcp]
 wcwidth
 fastmcp
 pandas
+requests
+# 最新版本的 SDK 在调用工具部分的 API 接口发生了改变，导致在接入国产模型时，会报 API Error：400 bad request
+claude-agent-sdk==0.1.62
+akshare
+ipywidgets

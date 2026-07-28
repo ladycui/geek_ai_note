@@ -2,7 +2,7 @@ import csv
 from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("mcp common server", host="0.0.0.0", port=38000)
+mcp = FastMCP("mcp common server", host="0.0.0.0", port=38000) # default port 8000
 
 @mcp.tool()
 def read_csv(file_path: str) -> list[dict]:
