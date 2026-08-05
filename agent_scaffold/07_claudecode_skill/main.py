@@ -12,7 +12,7 @@ load_dotenv()
 async def main():
     @tool(
         "tavilysearch",
-        "使用 Bocha AI 进行网络搜索",
+        "使用 tavily AI 进行网络搜索",
         {"query": str},
     )
     async def tavilysearch(args) -> dict[str, Any]:
@@ -87,7 +87,7 @@ async def main():
         system_prompt=SYSTEM_PROMPT,
         mcp_servers={"tools": websearch_server},
         skills="all",
-        allowed_tools=["Read", "Write", "Bash", "Glob", "mcp__tools__bochasearch"],
+        allowed_tools=["Read", "Write", "Bash", "Glob", "mcp__tools__tavilysearch"],
         env={
                 "ANTHROPIC_BASE_URL": "https://api.moonshot.cn/anthropic",
                 "ANTHROPIC_MODEL": "kimi-k2.5",

@@ -52,7 +52,7 @@ def risk_alert_agent() -> AgentDefinition:
 
 @tool(
     "tavilysearch",
-    "使用 Bocha AI 进行网络搜索",
+    "使用 tavily AI 进行网络搜索",
     {"query": str},
 )
 async def tavilysearch(args) -> dict[str, Any]:
@@ -122,7 +122,7 @@ async def main():
     options=ClaudeAgentOptions(
         include_partial_messages=True,
         mcp_servers={"websearch": websearch_server},
-        allowed_tools=["Read", "Grep", "Glob", "Agent", "AskUserQuestion", "mcp__websearch__bochasearch"],
+        allowed_tools=["Read", "Grep", "Glob", "Agent", "AskUserQuestion", "mcp__websearch__tavilysearch"],
         agents=agents_config,
         env={
                 "ANTHROPIC_BASE_URL": "https://api.moonshot.cn/anthropic",

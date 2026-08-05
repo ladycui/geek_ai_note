@@ -1,0 +1,2 @@
+I am a readable textbook. 
+any ai agent can read me.
